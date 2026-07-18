@@ -1,35 +1,21 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa"
+const skills = [
+  "Python", "SQL", "C",
+  "Git", "GitHub", "Docker",
+  "Snowflake", "Google Cloud Platform", "Kafka", "ETL",
+  "Power BI", "Excel", "SharePoint", "Power Automate", "Power Apps", "Microsoft 365",
+]
 
-function Skills() {
+export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6 bg-slate-900">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold mb-10">Skills</h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="bg-slate-800 p-6 rounded-2xl text-center">
-            <FaReact size={50} className="mx-auto mb-4" />
-            React
-          </div>
-
-          <div className="bg-slate-800 p-6 rounded-2xl text-center">
-            <FaHtml5 size={50} className="mx-auto mb-4" />
-            HTML
-          </div>
-
-          <div className="bg-slate-800 p-6 rounded-2xl text-center">
-            <FaCss3Alt size={50} className="mx-auto mb-4" />
-            CSS
-          </div>
-
-          <div className="bg-slate-800 p-6 rounded-2xl text-center">
-            <FaJs size={50} className="mx-auto mb-4" />
-            JavaScript
-          </div>
-        </div>
+    <section id="skills" className="min-h-screen flex flex-col justify-center px-6 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold mb-6">Skills</h2>
+      <div className="flex flex-wrap gap-3">
+        {skills.map((skill) => (
+          <span key={skill} className="px-4 py-2 bg-gray-100 rounded-full text-sm">
+            {skill}
+          </span>
+        ))}
       </div>
     </section>
   )
 }
-
-export default Skills

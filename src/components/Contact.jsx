@@ -1,33 +1,14 @@
-function Contact() {
+export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-slate-900">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          Contact Me
-        </h2>
-
-        <p className="mb-4">
-          Email:
-          <a
-            href="mailto:sowmya@example.com"
-            className="text-cyan-400 ml-2"
-          >
-            sowmya@example.com
-          </a>
-        </p>
-
-        <p>
-          GitHub:
-          <a
-            href="https://github.com/"
-            className="text-cyan-400 ml-2"
-          >
-            GitHub Profile
-          </a>
-        </p>
+    <section id="contact" className="min-h-screen flex flex-col justify-center items-center px-6 text-center">
+      <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
+      <a href="mailto:sowmyasunkara41@gmail.com" className="underline">
+        sowmyasunkara41@gmail.com
+      </a>
+      <div className="flex gap-6 mt-4">
+        <a href="https://github.com/babysowmya" className="underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/sunkara-sowmya-017270291/" className="underline">LinkedIn</a>
       </div>
     </section>
   )
 }
-
-export default Contact

@@ -1,19 +1,13 @@
-function About() {
+export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6">About Me</h2>
-
-        <p className="text-gray-300 leading-8">
-          I am Sowmya, a frontend developer passionate about
-          creating modern and responsive websites. I enjoy
-          working with React, Tailwind CSS, and animations.
-          I love building clean user interfaces and learning
-          new technologies every day.
-        </p>
-      </div>
+    <section id="about" className="min-h-screen flex flex-col justify-center px-6 max-w-2xl mx-auto">
+      <h2 className="text-3xl font-bold mb-4">About Me</h2>
+      <p>
+        Engineering student in Computer Science (Data Science) at Aditya College of
+        Engineering and Technology. I have a strong foundation in Python and SQL, and I enjoy
+        building data pipelines and automating workflows. I'm currently working on transitioning
+        into a career in Data Engineering.
+      </p>
     </section>
   )
 }
-
-export default About
