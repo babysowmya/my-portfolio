@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 const projects = [
   {
     title: "End-to-End ETL Pipeline for E-Commerce Analytics",
@@ -30,15 +32,22 @@ export default function Projects() {
     <section id="projects" className="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto">
       <h2 className="text-3xl font-bold mb-6">Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
-        {projects.map((p) => (
-          <div key={p.title} className="border rounded-xl p-5">
+        {projects.map((p, i) => (
+          <motion.div
+            key={p.title}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: i * 0.1 }}
+            className="border rounded-xl p-5"
+          >
             <h3 className="font-bold text-lg">{p.title}</h3>
             <p className="text-sm text-gray-600 mt-2">{p.description}</p>
             <p className="text-xs text-gray-400 mt-2">{p.tech}</p>
             <a href={p.link} className="text-sm underline mt-3 inline-block">
               View on GitHub
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
