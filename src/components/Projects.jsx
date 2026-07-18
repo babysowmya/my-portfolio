@@ -42,9 +42,13 @@ export default function Projects() {
             className="border rounded-xl p-5"
           >
             <h3 className="font-bold text-lg">{p.title}</h3>
-            <p className="text-sm text-gray-600 mt-2">{p.description}</p>
+            <p className="text-sm text-gray-300 mt-2">{p.description}</p>
             <p className="text-xs text-gray-400 mt-2">{p.tech}</p>
-            <a href={p.link} className="text-sm underline mt-3 inline-block">
+            
+              href={p.link}
+              className="text-sm underline mt-3 inline-block"
+              aria-label={`View ${p.title} on GitHub`}
+            >
               View on GitHub
             </a>
           </motion.div>
