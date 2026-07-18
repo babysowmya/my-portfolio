@@ -1,18 +1,56 @@
-# React + Vite
+# Sunkara Sowmya — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+Personal portfolio website built to showcase my background, skills, and projects
+as I transition into a career in Data Engineering. Includes a responsive layout,
+scroll-triggered animations, and a parallax hero section.
 
-Currently, two official plugins are available:
+## Live Site
+https://portfolio-ten-omega-fke1erbt35.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- Tailwind CSS
+- Framer Motion (scroll animations)
+- react-scroll-parallax (parallax effect)
+- Deployed on Vercel
 
-## React Compiler
+## Features
+- Fully responsive layout (mobile, tablet, desktop)
+- Parallax background effect in the Hero section
+- Scroll-triggered animations across About, Skills, and Projects sections
+- Respects `prefers-reduced-motion` for accessibility
+- Dark theme with accessible color contrast
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Sections
+- **Hero** — introduction and call-to-action
+- **About** — background and education
+- **Skills** — technical skills (Python, SQL, ETL tools, cloud platforms, etc.)
+- **Projects** — 4 real projects with descriptions, tech stack, and GitHub links
+- **Contact** — email, GitHub, and LinkedIn
 
-Note: This will impact Vite dev & build performances.
+## Run Locally
 
-## Expanding the ESLint configuration
+Clone the repository:
+```bash
+git clone https://github.com/babysowmya/my-portfolio.git
+cd my-portfolio
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+```bash
+npm install
+```
+
+Start the development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Author
+**Sunkara Sowmya**
+- Email: sowmyasunkara41@gmail.com
+- GitHub: [github.com/babysowmya](https://github.com/babysowmya)
+- LinkedIn: [linkedin.com/in/sunkara-sowmya-017270291](https://www.linkedin.com/in/sunkara-sowmya-017270291/)
